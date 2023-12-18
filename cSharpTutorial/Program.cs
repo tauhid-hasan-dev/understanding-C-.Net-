@@ -1,6 +1,8 @@
 ﻿// Main Program file
+
 using cSharpTutorial.functions;
 using cSharpTutorial.UserInput;
+using cSharpTutorial.ErrorHandling;
 using System;
 
 namespace cSharpTutorial
@@ -9,8 +11,9 @@ namespace cSharpTutorial
     {
         static void Main(string[] args)
         {
-             UserInput1.Baska();
+            // UserInput1.Baska();
             // func1.Calis();
+            ErrorHandlingClass.CatchErrors();
         }
     }
 
