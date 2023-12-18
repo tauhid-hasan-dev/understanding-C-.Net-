@@ -31,6 +31,10 @@ namespace cSharpTutorial.ErrorHandling
             {
                 Console.WriteLine("Argument Exception: The value was empty(null)");
             }
+            // finally is very inportant
+            finally{
+                Console.WriteLine("This is called anyway");
+            }
         }
     }
 }
