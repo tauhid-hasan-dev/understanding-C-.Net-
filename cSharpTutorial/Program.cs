@@ -8,9 +8,9 @@ namespace cSharpTutorial
     class Program 
     {
         static void Main(string[] args)
-        {   
-
-            UserInput1.Baska();
+        {
+             UserInput1.Baska();
+            // func1.Calis();
         }
     }
 
