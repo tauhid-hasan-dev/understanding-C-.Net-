@@ -10,6 +10,7 @@ using System;
 using System.Runtime.CompilerServices;
 using cSharpTutorial.IfStatement;
 using cSharpTutorial.NestedIfStatement;
+using cSharpTutorial.SwitchCase;
 
 namespace cSharpTutorial
 {
@@ -22,7 +23,8 @@ namespace cSharpTutorial
             // ErrorHandlingClass.CatchErrors();
             // OperatorIndex.UnderstandingOperators();
             // IfStatementClass.UnderstandingIfStatement();
-            NestedIfStatementClass.UnderstadingNestedIfStatement();
+            // NestedIfStatementClass.UnderstadingNestedIfStatement();
+            SwitchCaseClass.SwitchCase();
         }
     }
 
