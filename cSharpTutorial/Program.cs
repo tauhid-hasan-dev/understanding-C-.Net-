@@ -1,9 +1,13 @@
 ﻿// Main Program file
+// important note : Only public method can be accessed from other file
 
+using cSharpTutorial.Operators;
 using cSharpTutorial.functions;
 using cSharpTutorial.UserInput;
 using cSharpTutorial.ErrorHandling;
+
 using System;
+using System.Runtime.CompilerServices;
 
 namespace cSharpTutorial
 {
@@ -12,8 +16,12 @@ namespace cSharpTutorial
         static void Main(string[] args)
         {
             // UserInput1.Baska();
-            // func1.Calis();
-            ErrorHandlingClass.CatchErrors();
+            // func1.Calis();1
+            // ErrorHandlingClass.CatchErrors();
+
+
+            OperatorIndex.UnderstandingOperators();
+
         }
     }
 
