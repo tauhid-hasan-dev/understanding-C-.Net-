@@ -20,7 +20,7 @@ namespace cSharpTutorial
             // func1.UnderstandingFunctions();1
             // ErrorHandlingClass.CatchErrors();
             // OperatorIndex.UnderstandingOperators();
-            // IfStatementClass.UnderstandingIfStatement();
+             IfStatementClass.UnderstandingIfStatement();
 
         }
     }
