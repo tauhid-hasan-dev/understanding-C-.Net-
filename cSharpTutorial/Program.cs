@@ -9,6 +9,7 @@ using cSharpTutorial.ErrorHandling;
 using System;
 using System.Runtime.CompilerServices;
 using cSharpTutorial.IfStatement;
+using cSharpTutorial.NestedIfStatement;
 
 namespace cSharpTutorial
 {
@@ -20,8 +21,8 @@ namespace cSharpTutorial
             // func1.UnderstandingFunctions();1
             // ErrorHandlingClass.CatchErrors();
             // OperatorIndex.UnderstandingOperators();
-             IfStatementClass.UnderstandingIfStatement();
-
+            // IfStatementClass.UnderstandingIfStatement();
+            NestedIfStatementClass.UnderstadingNestedIfStatement();
         }
     }
 
