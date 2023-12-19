@@ -9,7 +9,7 @@ namespace cSharpTutorial.functions
     internal class func1
     {
 
-        public static void Calis()
+        public static void UnderstandingFunctions()
         {
             // we can run a function inside a function as well
             int calculation = Add(Add(5, 6), Add(5, 7));

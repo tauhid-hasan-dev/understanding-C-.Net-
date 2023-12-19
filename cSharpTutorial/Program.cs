@@ -8,6 +8,7 @@ using cSharpTutorial.ErrorHandling;
 
 using System;
 using System.Runtime.CompilerServices;
+using cSharpTutorial.IfStatement;
 
 namespace cSharpTutorial
 {
@@ -15,12 +16,11 @@ namespace cSharpTutorial
     {
         static void Main(string[] args)
         {
-            // UserInput1.Baska();
-            // func1.Calis();1
+            // UserInput1.UnderstandingUserInputs();
+            // func1.UnderstandingFunctions();1
             // ErrorHandlingClass.CatchErrors();
-
-
-            OperatorIndex.UnderstandingOperators();
+            // OperatorIndex.UnderstandingOperators();
+            // IfStatementClass.UnderstandingIfStatement();
 
         }
     }

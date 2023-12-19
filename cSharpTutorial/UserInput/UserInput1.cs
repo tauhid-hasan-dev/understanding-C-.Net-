@@ -8,7 +8,7 @@ namespace cSharpTutorial.UserInput
 {
     class UserInput1
     {
-        public static void Baska() 
+        public static void UnderstandingUserInputs() 
         {
            // string input = Console.ReadLine();
             Console.WriteLine(Calculate());
