@@ -26,7 +26,7 @@ namespace cSharpTutorial.NestedIfStatement
                 Console.WriteLine("You are logged in admin");
             }
 
-            if(userName != "admin")
+            if(userName != "")
             {
                 Console.WriteLine("You are logged in " + userName);
             }
