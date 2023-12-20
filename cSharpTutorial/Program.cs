@@ -12,6 +12,7 @@ using cSharpTutorial.IfStatement;
 using cSharpTutorial.NestedIfStatement;
 using cSharpTutorial.SwitchCase;
 using cSharpTutorial.TernaryOperator;
+using cSharpTutorial.Loops;
 
 namespace cSharpTutorial
 {
@@ -26,7 +27,9 @@ namespace cSharpTutorial
             // IfStatementClass.UnderstandingIfStatement();
             // NestedIfStatementClass.UnderstadingNestedIfStatement();
             // SwitchCaseClass.SwitchCase();
-            TernaryOperatorClass.UnderstandingTernaryOperator();
+            // TernaryOperatorClass.UnderstandingTernaryOperator();
+            // LoopsClass.UnderstandingLoops();
+            ForLoopClass.UnderstandingForLoop();
         }
     }
 
