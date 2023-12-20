@@ -29,7 +29,8 @@ namespace cSharpTutorial
             // SwitchCaseClass.SwitchCase();
             // TernaryOperatorClass.UnderstandingTernaryOperator();
             // LoopsClass.UnderstandingLoops();
-            ForLoopClass.UnderstandingForLoop();
+            // ForLoopClass.UnderstandingForLoop();
+            DoWhileClass.UnderstandingDoWhile();
         }
     }
 
