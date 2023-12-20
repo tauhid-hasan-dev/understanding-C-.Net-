@@ -30,7 +30,8 @@ namespace cSharpTutorial
             // TernaryOperatorClass.UnderstandingTernaryOperator();
             // LoopsClass.UnderstandingLoops();
             // ForLoopClass.UnderstandingForLoop();
-            DoWhileClass.UnderstandingDoWhile();
+            // DoWhileClass.UnderstandingDoWhile();
+             WhileClass.UnderstandingWhile();
         }
     }
 
