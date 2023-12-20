@@ -15,9 +15,9 @@ namespace cSharpTutorial.Loops
                 if(couter ==  6)
                 {
                     // Console.WriteLine("Sorry I can not go after 5");
-                    //break; // where the condition does not match
+                    //break; // Stop the iteration(where condition does not match)
                     Console.WriteLine("I skipped 5");
-                    continue;
+                    continue; // Skip the iteration(Where the condition match)
                 }
                 Console.WriteLine(couter);
              
