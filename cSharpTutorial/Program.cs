@@ -14,6 +14,7 @@ using cSharpTutorial.SwitchCase;
 using cSharpTutorial.TernaryOperator;
 using cSharpTutorial.Loops;
 using cSharpTutorial.Class;
+using cSharpTutorial.OOP;
 
 namespace cSharpTutorial
 {
@@ -35,22 +36,33 @@ namespace cSharpTutorial
             // WhileClass.UnderstandingWhile();
             // BreakContinueClass.UnderstandingBreakContinue();
 
+            //-------------------Normal Class----------------------------
+
             //---> this is a instance object created from the "Human" class
-            Human tauhid = new Human(); 
+            //Human tauhid = new Human(); 
 
             //---> we can only access the member variable if it is public
             //---> but !!! Using constructor we can access private member variable of a class
-            tauhid.firstName = "Tauhid";
-            tauhid.lastName = "Hasan";
-            tauhid.IntroduceMyself();
+            //tauhid.firstName = "Tauhid";
+            //tauhid.lastName = "Hasan";
+            //tauhid.IntroduceMyself();
 
             //---> this is a another instance object created from the "Human" class
-            Human musa = new Human();
-            musa.firstName = "Ahmad";
-            musa.lastName = "Musa";
+            //Human musa = new Human();
+            //musa.firstName = "Ahmad";
+            //musa.lastName = "Musa";
+            //musa.IntroduceMyself();
+
+
+            //---------------------------- Constructors --------------------------
+
+            HumansConstructor musa = new HumansConstructor("Mehedi", "Hasan", "blue", 26);
             musa.IntroduceMyself();
 
-           
+
+
+
+
 
         }
     }
