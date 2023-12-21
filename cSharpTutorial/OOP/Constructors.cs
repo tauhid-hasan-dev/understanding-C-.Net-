@@ -1,36 +1,47 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace cSharpTutorial.OOP
+namespace OOP
 {
-     class HumansConstructor
+    class Person
     {
-        // member variable
+        // Member variables
         private string firstName;
         private string lastName;
-        private string cyecolor;
+        private string namazStatus;
         private int age;
-       
 
-        // constructor (we use the constructor to udpate the state or variable of this class called HumansConstructor)
-        // Constructor name should be the same with the Class name. 
-        public HumansConstructor(string firstName, string lastName, string eyecolor, int age)
+        // Default constructor
+        public Person()
+        {
+            Console.WriteLine("Constructor called, Object created");
+        }
+
+        // Parameterized constructor with three parameters
+        public Person(string firstName, string lastName, int age)
         {
             this.firstName = firstName;
-            this.lastName = lastName;  
-            this.cyecolor = eyecolor;
+            this.lastName = lastName;
             this.age = age;
         }
 
-        // member method
+        // Parameterized constructor with four parameters
+        public Person(string firstName, string lastName, string namazStatus, int age)
+        {
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.namazStatus = namazStatus;
+            this.age = age;
+        }
+
+        // Member method
         public void IntroduceMyself()
         {
-            Console.WriteLine("Hi, I am {0} {1}", firstName, lastName);
-            Console.WriteLine("My eye color is {0}", cyecolor);
-            Console.WriteLine("My is age {0}", cyecolor);
+            if(age >  0 && age < 10 )
+            Console.WriteLine("Hi, I am {0} years old and my name is {1} {2}, I am still baby", age, firstName, lastName);
+            else if (age > 10 )
+            Console.WriteLine("Hi, I am {0} years old and my name is {1} {2}, I must pray", age, firstName, lastName);
         }
+
+
     }
 }

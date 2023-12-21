@@ -14,7 +14,8 @@ using cSharpTutorial.SwitchCase;
 using cSharpTutorial.TernaryOperator;
 using cSharpTutorial.Loops;
 using cSharpTutorial.Class;
-using cSharpTutorial.OOP;
+using OOP;
+
 
 namespace cSharpTutorial
 {
@@ -56,12 +57,19 @@ namespace cSharpTutorial
 
             //---------------------------- Constructors --------------------------
 
-            HumansConstructor musa = new HumansConstructor("Mehedi", "Hasan", "blue", 26);
-            musa.IntroduceMyself();
+            // Using the default constructor
+            Person person1 = new Person();
 
+            // Using the parameterized constructor with three parameters
+            Person person2 = new Person("Muaz", "Hasan", 8);
 
+            // Using the parameterized constructor with four parameters
+            Person person3 = new Person("Tauhid", "Hasan", "Praying", 30);
 
-
+            // Calling the IntroduceMyself method
+            person1.IntroduceMyself();
+            person2.IntroduceMyself();
+            person3.IntroduceMyself();
 
 
         }
