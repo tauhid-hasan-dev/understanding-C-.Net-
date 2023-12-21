@@ -13,6 +13,7 @@ using cSharpTutorial.NestedIfStatement;
 using cSharpTutorial.SwitchCase;
 using cSharpTutorial.TernaryOperator;
 using cSharpTutorial.Loops;
+using cSharpTutorial.Class;
 
 namespace cSharpTutorial
 {
@@ -32,7 +33,14 @@ namespace cSharpTutorial
             // ForLoopClass.UnderstandingForLoop();
             // DoWhileClass.UnderstandingDoWhile();
             // WhileClass.UnderstandingWhile();
-            BreakContinueClass.UnderstandingBreakContinue();
+            // BreakContinueClass.UnderstandingBreakContinue();
+
+            Human tauhid = new Human();
+
+            tauhid.firstName = "Mehedi Hasan";
+            tauhid.IntroduceMyself();
+      
+
         }
     }
 
