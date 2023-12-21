@@ -35,11 +35,22 @@ namespace cSharpTutorial
             // WhileClass.UnderstandingWhile();
             // BreakContinueClass.UnderstandingBreakContinue();
 
-            Human tauhid = new Human();
+            //---> this is a instance object created from the "Human" class
+            Human tauhid = new Human(); 
 
-            tauhid.firstName = "Mehedi Hasan";
+            //---> we can only access the member variable if it is public
+            //---> but !!! Using constructor we can access private member variable of a class
+            tauhid.firstName = "Tauhid";
+            tauhid.lastName = "Hasan";
             tauhid.IntroduceMyself();
-      
+
+            //---> this is a another instance object created from the "Human" class
+            Human musa = new Human();
+            musa.firstName = "Ahmad";
+            musa.lastName = "Musa";
+            musa.IntroduceMyself();
+
+           
 
         }
     }

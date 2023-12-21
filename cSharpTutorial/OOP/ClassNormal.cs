@@ -11,10 +11,11 @@ namespace cSharpTutorial.Class
     {   
         // member variable
         public string firstName;
+        public string lastName;
 
         public void IntroduceMyself()
         {
-            Console.WriteLine("Hi, I am {0}", firstName);
+            Console.WriteLine("Hi, I am {0} {1}", firstName, lastName);
         }
     }
 }
