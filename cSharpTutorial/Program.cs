@@ -55,22 +55,21 @@ namespace cSharpTutorial
             //musa.IntroduceMyself();
 
 
-            //---------------------------- Constructors --------------------------
+            //---------------------------- Single and multiple Constructors --------------------------
 
-            // Using the default constructor
+            //---> Using the default constructor
             Person person1 = new Person();
 
-            // Using the parameterized constructor with three parameters
+            //---> Using the parameterized constructor with three parameters
             Person person2 = new Person("Muaz", "Hasan", 8);
 
-            // Using the parameterized constructor with four parameters
+            //---> Using the parameterized constructor with four parameters
             Person person3 = new Person("Tauhid", "Hasan", "Praying", 30);
 
-            // Calling the IntroduceMyself method
+            //---> Calling the IntroduceMyself method
             person1.IntroduceMyself();
             person2.IntroduceMyself();
             person3.IntroduceMyself();
-
 
         }
     }
