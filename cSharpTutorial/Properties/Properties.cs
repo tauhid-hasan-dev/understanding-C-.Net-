@@ -14,7 +14,11 @@ namespace cSharpTutorial.Properties
         public int width;
         public int volume;
 
-        // fIRST: way to define "SETTER" and "GETTER"
+
+
+        // ---------------------------------------FIRST: way to define "SETTER" and "GETTER"------------------
+        // we need member variable to use Property
+
         //public void SetLength(int length)
         //{
         //    this.length = length;
@@ -25,18 +29,42 @@ namespace cSharpTutorial.Properties
         //    return this.length;
         //}
 
-        // SECOND: way to define "SETTER" and "GETTER"
 
-        public int Height 
-        {  
-            get { return this.height; }
-            set { 
-                if(value < 0) 
-                this.height = -value; 
-                else
-                this.height = value; 
-            }
-        }
+        // -------------------------SECOND: way to define "SETTER" and "GETTER"--------------------
+        // we need member variable to use Property
+
+        //public int Height
+        //{
+        //    get 
+        //    { 
+        //        return this.height; 
+        //    }
+        //    set
+        //    { 
+        //        this.height = value;
+        //    }
+        //}
+
+
+
+        // -------------------------SECOND: way to define "SETTER" and "GETTER"--------------------
+        // we need member variable to use Property
+
+
+        public int Width { get; set; }
+
+
+        // This is a property not member faculty.
+        //public int Height 
+        //{  
+        //    get { return this.height; }
+        //    set { 
+        //        if(value < 0) 
+        //        this.height = -value; 
+        //        else
+        //        this.height = value;
+        //    }
+        //}
 
 
         public void DisplayInfo()
