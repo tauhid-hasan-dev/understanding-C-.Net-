@@ -86,7 +86,7 @@ namespace cSharpTutorial
 
             //box.DisplayInfo();
 
-            //----------------------------------Members---------------------------
+            //----------------------------------Members-------------------------------------
 
 
             Members member1 = new Members();
