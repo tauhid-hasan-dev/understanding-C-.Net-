@@ -15,6 +15,7 @@ using cSharpTutorial.TernaryOperator;
 using cSharpTutorial.Loops;
 using cSharpTutorial.Class;
 using OOP;
+using cSharpTutorial.Properties;
 
 
 namespace cSharpTutorial
@@ -58,18 +59,33 @@ namespace cSharpTutorial
             //---------------------------- Single and multiple Constructors --------------------------
 
             //---> Using the default constructor
-            Person person1 = new Person();
+            // Person person1 = new Person();
 
             //---> Using the parameterized constructor with three parameters
-            Person person2 = new Person("Muaz", "Hasan", 8);
+            // Person person2 = new Person("Muaz", "Hasan", 8);
 
             //---> Using the parameterized constructor with four parameters
-            Person person3 = new Person("Tauhid", "Hasan", "Praying", 30);
+            // Person person3 = new Person("Tauhid", "Hasan", "Praying", 30);
 
             //---> Calling the IntroduceMyself method
-            person1.IntroduceMyself();
-            person2.IntroduceMyself();
-            person3.IntroduceMyself();
+            // person1.IntroduceMyself();
+            // person2.IntroduceMyself();
+            // person3.IntroduceMyself();
+
+            //----------------------------------Properties -----------------------------------------------
+
+            Box box = new Box();
+            box.SetLength(60); // SET: we can not "SET" data if the variable is private
+            Console.WriteLine("The box length is {0}", box.GetLength()); // GET: we can not get data if variable is private
+
+            box.width = 4;
+            box.height = 12;
+
+
+
+            box.DisplayInfo();
+
+
 
         }
     }
