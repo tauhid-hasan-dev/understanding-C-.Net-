@@ -16,6 +16,7 @@ using cSharpTutorial.Loops;
 using cSharpTutorial.Class;
 using OOP;
 using cSharpTutorial.Properties;
+using cSharpTutorial.UnderstandingMembers;
 
 
 namespace cSharpTutorial
@@ -74,18 +75,25 @@ namespace cSharpTutorial
 
             //----------------------------------Properties -----------------------------------------------
 
-            Box box = new Box();
-            // box.SetLength(60); // SET: we can not "SET" data if the variable is private
-            // Console.WriteLine("The box length is {0}", box.GetLength()); // GET: we can not get data if variable is private
+            // Box box = new Box();
+            // box.SetLength(60); //-------> SET: we can not "SET" data if the variable is private
+            // Console.WriteLine("The box length is {0}", box.GetLength()); //--------> GET: we can not get data if variable is private
 
-            box.Height = 89;
-            Console.WriteLine("The box length is {0}", box.Height);
-            box.width = 4;
-            box.length = 12;
+            //box.Height = 89;
+            //Console.WriteLine("The box length is {0}", box.Height);
+            //box.width = 4;
+            //box.length = 12;
+
+            //box.DisplayInfo();
+
+            //----------------------------------Members---------------------------
 
 
+            Members member1 = new Members();
+            member1.introducing(true);
 
-            box.DisplayInfo();
+            //Console.ReadKey();
+
 
 
 
