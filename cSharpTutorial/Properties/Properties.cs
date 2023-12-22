@@ -9,19 +9,33 @@ namespace cSharpTutorial.Properties
     class Box
     {
         // member variable 
-        private int length;
-        public int height;
+        public int length;
+        private int height;
         public int width;
         public int volume;
 
-        public void SetLength(int length)
-        {
-            this.length = length;
-        }
+        // fIRST: way to define "SETTER" and "GETTER"
+        //public void SetLength(int length)
+        //{
+        //    this.length = length;
+        //}
 
-        public int GetLength()
-        {
-            return this.length;
+        //public int GetLength()
+        //{
+        //    return this.length;
+        //}
+
+        // SECOND: way to define "SETTER" and "GETTER"
+
+        public int Height 
+        {  
+            get { return this.height; }
+            set { 
+                if(value < 0) 
+                this.height = -value; 
+                else
+                this.height = value; 
+            }
         }
 
 

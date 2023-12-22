@@ -75,11 +75,13 @@ namespace cSharpTutorial
             //----------------------------------Properties -----------------------------------------------
 
             Box box = new Box();
-            box.SetLength(60); // SET: we can not "SET" data if the variable is private
-            Console.WriteLine("The box length is {0}", box.GetLength()); // GET: we can not get data if variable is private
+            // box.SetLength(60); // SET: we can not "SET" data if the variable is private
+            // Console.WriteLine("The box length is {0}", box.GetLength()); // GET: we can not get data if variable is private
 
+            box.Height = 89;
+            Console.WriteLine("The box length is {0}", box.Height);
             box.width = 4;
-            box.height = 12;
+            box.length = 12;
 
 
 
