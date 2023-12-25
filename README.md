@@ -18,3 +18,18 @@
 - Members
 - User Inputs
 - Properties
+
+# Learning Order of C# Developer
+- Syntax
+- Debugging
+- OOP 
+- Desktop Project Type 
+- ASP.NET core
+- Data Access (How to get data access in application)
+- Dependency Injection (Its built in in ASP.NET but not for others, learn details for others)
+- html/css
+- Javascript
+- Azure/Aws (learn a cloud, it is very important)
+- Docker (every developer should know docker)
+- SQL (MySQL, MongoDB)
+- Git
