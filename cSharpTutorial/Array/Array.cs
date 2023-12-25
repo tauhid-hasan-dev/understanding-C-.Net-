@@ -45,7 +45,7 @@ namespace cSharpTutorial.Array
 
   
 
-            // another 2nd way of initializing of an array
+            // 2nd way of initializing of an array
             int[] gradesOfMathStudentA = { 20, 13, 17 };
 
             // third way of initializing of an array
