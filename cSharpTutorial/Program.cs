@@ -18,6 +18,7 @@ using OOP;
 using cSharpTutorial.Properties;
 using cSharpTutorial.UnderstandingMembers;
 using cSharpTutorial.Array;
+using cSharpTutorial.ForEachLoop;
 
 
 namespace cSharpTutorial
@@ -98,9 +99,12 @@ namespace cSharpTutorial
 
             //---------------------------------- Array---------------------------------------
 
-            ArrayClass.UnderstandingArray();
+            // ArrayClass.UnderstandingArray();
 
 
+            //---------------------------------- For Each Loop ---------------------------------------
+
+            ForEachClass.UnderstandingForEach();
 
 
 
