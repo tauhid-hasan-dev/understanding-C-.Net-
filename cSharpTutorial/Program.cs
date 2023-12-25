@@ -17,6 +17,7 @@ using cSharpTutorial.Class;
 using OOP;
 using cSharpTutorial.Properties;
 using cSharpTutorial.UnderstandingMembers;
+using cSharpTutorial.Array;
 
 
 namespace cSharpTutorial
@@ -89,10 +90,17 @@ namespace cSharpTutorial
             //----------------------------------Members-------------------------------------
 
 
-            Members member1 = new Members();
-            member1.introducing(true);
+            // Members member1 = new Members();
+            // member1.introducing(true);
 
             //Console.ReadKey();
+
+
+            //---------------------------------- Array---------------------------------------
+
+            ArrayClass.UnderstandingArray();
+
+
 
 
 
