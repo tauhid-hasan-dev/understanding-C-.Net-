@@ -16,7 +16,8 @@ namespace cSharpTutorial.NestedForLoop
             };
 
         public static void UnderstandingNestedLoop()
-        {
+        {   
+            
             foreach (int item in matrix)
             {
                 Console.Write(item + " ");
@@ -24,12 +25,12 @@ namespace cSharpTutorial.NestedForLoop
 
             }
 
-            Console.WriteLine(matrix.GetLength(0)); // Prints the length of the first dimension (rows) which is 3
-            Console.WriteLine(matrix.GetLength(1)); // Prints the length of the second dimension (columns) which is 2
+            // Console.WriteLine(matrix.GetLength(0)); // Prints the length of the first dimension (rows) which is 3
+            // Console.WriteLine(matrix.GetLength(1)); // Prints the length of the second dimension (columns) which is 2
 
 
             //------------> what we can not do with for each loop we can do that in for loop. w
-            Console.Write("\n This is our 2d array printed using nested for loop");
+            Console.Write("\n This is our 2d array printed using nested for loop \n");
 
             for (int i = 0; i < matrix.GetLength(0); i++)
             {
@@ -39,7 +40,9 @@ namespace cSharpTutorial.NestedForLoop
 
                 for(int j = 0; j < matrix.GetLength(1); j++)
                 {
-                    Console.Write(matrix[i,j] + " " );
+                    int eachElement = matrix[i,j];
+                    // eachElement = 2; (As you can see if we want we can reassign the value of each element in for loop
+                    Console.Write(eachElement + " " );
                 }
             }
            
