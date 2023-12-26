@@ -21,6 +21,7 @@ using cSharpTutorial.Array;
 using cSharpTutorial.ForEachLoop;
 using cSharpTutorial._2DArray;
 using cSharpTutorial.NestedForLoop;
+using cSharpTutorial.JaggedArray;
 
 
 namespace cSharpTutorial
@@ -116,7 +117,15 @@ namespace cSharpTutorial
 
             // ----------------------- Nested for loop -------------------------------
 
-            NestedForLoopClass.UnderstandingNestedLoop();
+            // NestedForLoopClass.UnderstandingNestedLoop();
+
+
+            // ----------------------- Jagged Array ---------------------------
+
+            JaggedArrayClass.UnderstandingJaggedArray();
+
+
+
 
 
         }
