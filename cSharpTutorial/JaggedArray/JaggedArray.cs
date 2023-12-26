@@ -35,6 +35,16 @@ namespace cSharpTutorial.JaggedArray
             };
 
 
+            for(int i = 0; i< jaggedArray2.Length; i++)
+            {
+                Console.WriteLine($"Elemment {i}");
+                for (int j = 0; j< jaggedArray2[i].Length; j++)
+                {
+                    Console.WriteLine(jaggedArray2[i][j]);
+                }
+            } 
+
+
             Console.WriteLine($"The value in the middle of the first entry is {jaggedArray[0][1]}");
 
 
