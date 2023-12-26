@@ -20,6 +20,7 @@ using cSharpTutorial.UnderstandingMembers;
 using cSharpTutorial.Array;
 using cSharpTutorial.ForEachLoop;
 using cSharpTutorial._2DArray;
+using cSharpTutorial.NestedForLoop;
 
 
 namespace cSharpTutorial
@@ -110,10 +111,12 @@ namespace cSharpTutorial
 
             //----------------------------------- 2D Array ---------------------------
 
-            Class2DArray.Understanding2dArray();
+            // Class2DArray.Understanding2dArray();
 
 
+            // ----------------------- Nested for loop -------------------------------
 
+            NestedForLoopClass.UnderstandingNestedLoop();
 
 
         }
