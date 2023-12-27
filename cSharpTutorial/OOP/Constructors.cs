@@ -13,7 +13,7 @@ namespace OOP
         // Default constructor
         public Person()
         {
-            Console.WriteLine("Constructor called, Object created");
+            Console.WriteLine("Constructor called, Object created, this a default constructor");
         }
 
         // Parameterized constructor with three parameters
