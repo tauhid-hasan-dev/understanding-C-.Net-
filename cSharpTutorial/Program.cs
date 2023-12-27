@@ -22,6 +22,8 @@ using cSharpTutorial.ForEachLoop;
 using cSharpTutorial._2DArray;
 using cSharpTutorial.NestedForLoop;
 using cSharpTutorial.JaggedArray;
+using Microsoft.VisualBasic;
+using cSharpTutorial.ArrayListNameSpace;
 
 
 namespace cSharpTutorial
@@ -122,7 +124,12 @@ namespace cSharpTutorial
 
             // ----------------------- Jagged Array ---------------------------
 
-            JaggedArrayClass.UnderstandingJaggedArray();
+            // JaggedArrayClass.UnderstandingJaggedArray();
+
+
+            // ---------------------- Array List -------------------------
+
+            ArrayListClass.UnderstandingArrayList();
 
 
 
