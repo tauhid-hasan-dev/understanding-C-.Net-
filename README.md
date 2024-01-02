@@ -97,8 +97,10 @@ a = 200
 ### Data hiding(defining "SETTER" and "GETTER") using PROPERTIES:
 - Properties starts with a capital letter.
 - 'value' is build in 'keyword' for set function.
+- we can write conditions inside the setter.
+  
 ```csharp
-public int height;
+private int height;
 
 public int Height
 {
@@ -112,5 +114,21 @@ public int Height
   }
 }
 ```
+2nd Alternative to write a property
+```csharp
+private int height;
+
+public int Height
+{
+  get => this.height
+  set => this.height = value
+}
+```
+3nd Alternative and the shortcut way to write a property (if there is no condition)
+```csharp
+        public int Width { get; set; }
+}
+```
+
 
 
