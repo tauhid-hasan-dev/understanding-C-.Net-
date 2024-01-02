@@ -37,23 +37,25 @@
 # OOP in C#
 
 <details>
-## Class and Object : 
-```
-- Variables inside the class but outside the object is called "MEMBER VARIABLE" or "INSTANCE VARIABLE"
-- Variables inside the object called "LOCAL VARIABLE"
-- A class can be created by a developer but can not be used by that same developer
-- If a developer use that class to create instances we can call that developer "USER" or "CALLER"
-- Class name should be started capital letter (convention). Ex: class Human 
-- Method name should be started with a verb (convention). Ex: GetFullName()
-- A method in a class should be able to execute only one task not many.
-```
-### UML diagram for class : 
-```
-- UML, or Unified Modeling Language, is a standardized visual language used in object-oriented software engineering.
-- It provides a standard method for creating blueprints of a system
-- Class diagram can be provided to the engineers for creating c# reusable class for further use by other developer.
-```
+  <summary>Click to expand/collapse</summary>
+
+  ## Class and Object:
+
+  - Variables inside the class but outside the object are called "MEMBER VARIABLE" or "INSTANCE VARIABLE"
+  - Variables inside the object are called "LOCAL VARIABLE"
+  - A class can be created by a developer but cannot be used by that same developer
+  - If a developer uses that class to create instances, we can call that developer "USER" or "CALLER"
+  - Class name should start with a capital letter (convention). Ex: class Human
+  - Method name should start with a verb (convention). Ex: GetFullName()
+  - A method in a class should be able to execute only one task, not many.
+
+  ### UML diagram for class:
+
+  - UML, or Unified Modeling Language, is a standardized visual language used in object-oriented software engineering.
+  - It provides a standard method for creating blueprints of a system
+  - A class diagram can be provided to the engineers for creating C# reusable class for further use by other developers.
 </details>
+
 
 ### Value type and Reference Type
 Reference Type:
