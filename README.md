@@ -122,10 +122,9 @@ public int Height
   set => this.height = value
 }
 ```
-3nd Alternative and the shortcut way to write a property (if there is no condition)
+AUTO PROPERTY: 3nd Alternative and the shortcut way to write a property (if there is no condition)
 ```csharp
         public int Width { get; set; }
-}
 ```
 
 
