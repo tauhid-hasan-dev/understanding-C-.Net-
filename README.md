@@ -126,8 +126,10 @@ AUTO PROPERTY: 3nd Alternative and the shortcut way to write a property (if ther
 - Most of the time we will use auto property
   
 ```csharp
-        public int Width { get; set; }
+public int Width { get; set; }
 ```
+<details>
+<summary>Cool Dropdown</summary>
 
 
 
