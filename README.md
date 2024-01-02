@@ -51,3 +51,8 @@
 - It provides a standard method for creating blueprints of a system
 - Class diagram can be provided to the engineers for creating c# reusable class for further use by other developer.
 ```
+### Value type and Reference Type
+```
+- Reference Type: Creating an instance object from a class (If we modify main reference it will affect all the varable connected to that reference) 
+- Value type: Primitive type variable
+```
