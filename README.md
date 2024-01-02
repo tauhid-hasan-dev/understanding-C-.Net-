@@ -35,7 +35,7 @@
 - Git
 
 # OOP in C#
-### Class and Object : 
+## Class and Object : 
 ```
 - Variables inside the class but outside the object is called "MEMBER VARIABLE" or "INSTANCE VARIABLE"
 - Variables inside the object called "LOCAL VARIABLE"
@@ -74,7 +74,7 @@ int a = 100;
 int b = a;
 a = 200
 ```
-### Data Hiding (Encapsulation)
+## Data Hiding (Encapsulation)
 - we can hide data by defining "SETTER" and "GETTER".
 - Data hiding is not data security.
 - We can hide data (define "SETTER" and "GETTER") using both Methods and Properties
