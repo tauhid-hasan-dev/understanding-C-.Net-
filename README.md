@@ -98,17 +98,19 @@ a = 200
 - Properties starts with a capital letter.
 - 'value' is build in 'keyword' for set function.
 ```csharp
-         private int Height
-        {
-            get
-            {
-                return this.height;
-            }
-            set
-            {
-                this.height = value;
-            }
-        }
+public int height;
+
+public int Height
+{
+  get
+  {
+      return this.height;
+  }
+  set
+  {
+      this.height = value;
+  }
+}
 ```
 
 
