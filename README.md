@@ -45,3 +45,9 @@
 - Method name should be started with a verb (convention). Ex: GetFullName()
 - A method in a class should be able to execute only one task not many.
 ```
+### UML diagram for class : 
+```
+- UML, or Unified Modeling Language, is a standardized visual language used in object-oriented software engineering.
+- It provides a standard method for creating blueprints of a system
+- Class diagram can be provided to the engineers for creating c# reusable class for further use by other developer.
+```
