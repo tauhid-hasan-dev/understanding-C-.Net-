@@ -54,8 +54,6 @@
 ### Value type and Reference Type
 ```
 - Reference Type: Creating an instance object from a class (If we modify main reference it will affect all the variable connected to that reference) 
-- Value type: Primitive type variable
-
 ```
 In this example person2 is referenced to the person1 
 if the person1 object is modified the person2 will be affected as well
@@ -68,3 +66,12 @@ person1.lastName = "Hasan";
 Person person2 = new Person();
 person2 = person1;
 ```
+- Value type: Primitive type variable
+
+Even if we changed the value of a later to 200 but the value of b will be still 100. Because it is a value type or primitive type.
+```csharp
+int a = 100;
+int b = a;
+a = 200
+```
+
