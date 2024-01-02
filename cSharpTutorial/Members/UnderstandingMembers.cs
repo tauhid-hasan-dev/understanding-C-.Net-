@@ -34,6 +34,15 @@ namespace cSharpTutorial.UnderstandingMembers
         
         }
 
+        //----------------- we can write this property to hide data in an alternative way ------------
+
+
+        //public string JobTitle
+        //{
+        //    set => this.memberName = value;
+        //    get => memberName;
+        //}
+
         // public member method - can be called from other class
 
         public void introducing (bool isFriend) { 

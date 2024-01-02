@@ -58,7 +58,8 @@ namespace cSharpTutorial.ArrayListNameSpace
 
 
             Console.WriteLine(sum);
-            Console.ReadKey();
+            // Console.ReadKey();
+            Console.Beep();
 
 
 
