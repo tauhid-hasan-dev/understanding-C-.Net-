@@ -41,4 +41,7 @@
 - Variables inside the object called "LOCAL VARIABLE"
 - A class can be created by a developer but can not be used by that same developer
 - If a developer use that class to create instances we can call that developer "USER" or "CALLER"
+- Class name should be started capital letter (convention). Ex: class Human 
+- Method name should be started with a verb (convention). Ex: GetFullName()
+- A method in a class should be able to execute only one task not many.
 ```
