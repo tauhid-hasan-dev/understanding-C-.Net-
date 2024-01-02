@@ -53,10 +53,18 @@
 ```
 ### Value type and Reference Type
 ```
-- Reference Type: Creating an instance object from a class (If we modify main reference it will affect all the varable connected to that reference) 
+- Reference Type: Creating an instance object from a class (If we modify main reference it will affect all the variable connected to that reference) 
 - Value type: Primitive type variable
 
 ```
+In this example person2 is referenced to the person1 
+if the person1 object is modified the person2 will be effected as well
+
 ```csharp
 Person person1 = new Person();
+person1.firstName = "Tauhid";
+person1.lastName = "Hasan";
+
+Person person2 = new Person();
+person2 = person1;
 ```
