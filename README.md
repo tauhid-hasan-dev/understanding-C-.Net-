@@ -123,6 +123,8 @@ public int Height
 }
 ```
 AUTO PROPERTY: 3nd Alternative and the shortcut way to write a property (if there is no condition)
+- Most of the time we will use auto property
+  
 ```csharp
         public int Width { get; set; }
 ```
