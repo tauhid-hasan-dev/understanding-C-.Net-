@@ -74,4 +74,22 @@ int a = 100;
 int b = a;
 a = 200
 ```
+### Data Hiding (Encapsulation)
+- we can hide data by defining "SETTER" and "GETTER".
+- Data hiding is not data security.
+- We can hide data (define "SETTER" and "GETTER") using both Methods and Properties
+
+Data hiding(defining "SETTER" and "GETTER") using METHODS:
+- 
+```csharp
+  public void SetLength(int length)
+  {
+      this.length = length;
+  }
+
+  public int GetLength()
+  {
+      return this.length;
+  }
+```
 
