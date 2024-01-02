@@ -58,7 +58,7 @@
 
 ```
 In this example person2 is referenced to the person1 
-if the person1 object is modified the person2 will be effected as well
+if the person1 object is modified the person2 will be affected as well
 
 ```csharp
 Person person1 = new Person();
