@@ -55,6 +55,7 @@
 ```
 - Reference Type: Creating an instance object from a class (If we modify main reference it will affect all the varable connected to that reference) 
 - Value type: Primitive type variable
+```csharp
 Person person1 = new Person();
-
+```
 ```
