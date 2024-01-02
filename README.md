@@ -33,3 +33,10 @@
 - Docker (every developer should know docker)
 - SQL (MySQL, MongoDB)
 - Git
+
+# OOP in C#
+### Class and Object : 
+```
+- Variables inside the class but outside the object is called "MEMBER VARIABLE" or "INSTANCE VARIABLE"
+- Variables inside the object called "LOCAL VARIABLE"
+```
