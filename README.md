@@ -37,7 +37,7 @@
 # OOP in C#
 
 <details>
-  <summary>Click to expand/collapse</summary>
+  <summary>Class and Object</summary>
 
   ## Class and Object:
 
