@@ -56,8 +56,9 @@
   - A class diagram can be provided to the engineers for creating C# reusable class for further use by other developers.
 </details>
 
-
-### Value type and Reference Type
+<details>
+  <summary>Value type and Reference Type</summary>
+## Value type and Reference Type
 Reference Type:
 - Creating an instance object from a class (If we modify main reference it will affect all the variable connected to that reference)
 In this example person2 is referenced to the person1 
@@ -78,6 +79,7 @@ int a = 100;
 int b = a;
 a = 200
 ```
+</details>
 ## Data Hiding (Encapsulation)
 - we can hide data by defining "SETTER" and "GETTER".
 - Data hiding is not data security.
