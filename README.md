@@ -81,6 +81,10 @@ int b = a;
 a = 200
 ```
 </details>
+
+<details>
+  <summery>Data Hiding (Encapsulation)</summery>
+
 ## Data Hiding (Encapsulation)
 - we can hide data by defining "SETTER" and "GETTER".
 - Data hiding is not data security.
@@ -137,8 +141,8 @@ AUTO PROPERTY: 3nd Alternative and the shortcut way to write a property (if ther
 ```csharp
 public int Width { get; set; }
 ```
-<details>
-<summary>Cool Dropdown</summary>
+</details>
+
 
 
 
