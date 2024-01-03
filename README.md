@@ -83,7 +83,7 @@ a = 200
 </details>
 
 <details>
-  <summery>Data Hiding (Encapsulation)</summery>
+  <summary>Value type and Reference Type</summary>
 
 ## Data Hiding (Encapsulation)
 - we can hide data by defining "SETTER" and "GETTER".
