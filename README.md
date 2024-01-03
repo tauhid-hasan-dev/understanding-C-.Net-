@@ -83,7 +83,7 @@ a = 200
 </details>
 
 <details>
-  <summary>Value type and Reference Type</summary>
+  <summary>Data Hiding (Encapsulation) </summary>
 
 ## Data Hiding (Encapsulation)
 - we can hide data by defining "SETTER" and "GETTER".
