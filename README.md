@@ -143,6 +143,42 @@ public int Width { get; set; }
 ```
 </details>
 
+<details>
+  <summary>Data Hiding (Encapsulation) </summary>
+
+## Constructors
+- In C#, a constructor is a special method that is automatically called when an object of a class is created
+- It is used to initialize the object's state or perform any necessary setup operations
+- Constructors have the same name as the class and do not have a return type, not even void
+- Creator of the class can use constructor to force the user/caller to get certain data as a parameter.
+  
+### Constructor Overloading:
+- A class can have multiple constructors with different parameter lists (overloading).
+- User has multiple option to call the contructor.
+
+In this example, FullNameConstructor has multiple constructor and a USER/CALLER can call the constructor 
+either with 3 parameter or 2 parameter.
+```csharp
+public class FullNameConstructor
+{
+    public FullNameConstructor(string FirstName, string MiddleName, string LastName)
+    {
+        this.FirstName = FirstName;
+        this.MiddleName = MiddleName;
+        this.LastName = LastName;
+    }
+
+    public FullNameConstructor(string FirstName, string LastName)
+    {
+        this.FirstName = FirstName;
+        this.LastName = LastName;
+    }
+}
+```
+
+
+</details>
+
 
 
 
