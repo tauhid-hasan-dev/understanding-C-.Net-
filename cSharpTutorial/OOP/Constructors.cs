@@ -1,4 +1,5 @@
-﻿using System;
+﻿using cSharpTutorial.OOP;
+using System;
 
 namespace OOP
 {
@@ -9,6 +10,9 @@ namespace OOP
         private string lastName;
         private string namazStatus;
         private int age;
+
+        // Assigning Address class as a type of PresentAddress property.
+        public Address PresentAddress { get; set; }
 
         // Default constructor
         public Person()

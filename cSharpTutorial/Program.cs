@@ -24,6 +24,8 @@ using cSharpTutorial.NestedForLoop;
 using cSharpTutorial.JaggedArray;
 using Microsoft.VisualBasic;
 using cSharpTutorial.ArrayListNameSpace;
+using Microsoft.Win32.SafeHandles;
+using cSharpTutorial.OOP;
 
 
 namespace cSharpTutorial
@@ -135,7 +137,36 @@ namespace cSharpTutorial
 
             //***** Constructor Chain ********
 
-            ConstructorChainClass person = new ConstructorChainClass("tauhid", "hasan", "tazin");
+            // ConstructorChainClass person = new ConstructorChainClass("tauhid", "hasan", "tazin");
+
+
+            // Assoisiation Relasionship
+
+            // -------------------- OneToOne Relationship ----------------
+
+            //
+            Address address = new Address();
+            address.RoadNo = "102";
+            address.Area = "Mohakhali";
+            address.PostCode = "56677";
+
+            Person person1 = new Person();
+
+            person1.PresentAddress = address;
+
+            //Retrieving the myAddress data from person1 instance (of Person class)
+            //in here "Address" is type
+            Address myAddress = person1.PresentAddress; 
+
+            //If we want we can retrieve only one property from the address
+            string area = person1.PresentAddress.Area;
+            // OR
+            string area1 = myAddress.Area;
+
+
+
+
+
 
 
 
