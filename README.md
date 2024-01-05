@@ -268,7 +268,7 @@ class ConstructorChainClass
 ##  Association Relationship 
 - In C#, an association relationship refers to a connection or relationship between two classes that highlights how they are related or connected in some way within a system. 
 - This relationship can be a simple connection or a more complex interaction between the classes.
-- Normally when a class is a type of another member variable of another class we can them Association relationship.
+- Normally when use a class as a type of another member variable of another class we can call them Association relationship.
 
 There are different types of association relationships:
 
@@ -281,6 +281,56 @@ There are different types of association relationships:
 #### Many-to-Many: Where multiple instances of one class are associated with multiple instances of another class.
 
 These relationships are established through member variables, properties, or methods within the classes that reference each other.
+
+### ONE-TO-ONE
+
+Delclation of the type Class "Address"
+```csharp
+class Address
+{
+    public string HouseNo { set; get; }
+    public string RoadNo { set; get; }
+    public string Area { set; get; }
+    public string PostCode { set; get; }
+    public string District { set; get; }
+
+}
+```
+Assigning this Address class as a TYPE of a property in another class called "Person" 
+
+```csharp
+class Person
+{
+    // Member variables
+    private string firstName;
+    private string lastName;
+
+    // Assigning Address class as a type of PresentAddress property.
+    public Address PresentAddress { get; set; }
+}
+```
+Then using the Address type in Main function of Program.cs file.
+
+```csharp
+Address address = new Address();
+address.RoadNo = "102";
+address.Area = "Mohakhali";
+address.PostCode = "56677";
+
+Person person1 = new Person();
+
+person1.PresentAddress = address;
+
+//Retrieving the myAddress data from person1 instance (of Person class)
+//in here "Address" is type
+Address myAddress = person1.PresentAddress; 
+
+//If we want we can retrieve only one property from the address
+string area = person1.PresentAddress.Area;
+// OR
+string area1 = myAddress.Area;
+```
+
 
 
 </details>
