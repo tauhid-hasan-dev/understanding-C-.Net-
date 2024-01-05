@@ -176,6 +176,51 @@ public class FullNameConstructor
 }
 ```
 
+### Default Constructor:
+- If no constructor is defined in a class, the compiler automatically generates a default constructor.
+- The default constructor is often used to initialize the fields or properties of the object with default values.
+- This helps ensure that the object is in a valid state immediately after creation.
+- 
+
+In this example, FullNameConstructor is a Default constructor explicitly created;
+
+```csharp
+public class FullNameConstructor
+{
+    string firstName = "Tauhid";
+    int age = "30";
+
+    public FullNameConstructor()
+    {
+       // Initialization code goes here
+    }
+}
+```
+#### Inheritance of Default Constructor 
+- When a class is derived from another class (inherits from a base class), and the base class has a default constructor, the derived class will automatically call the default constructor of the base class.
+- This ensures that the base class is properly initialized before the derived class.
+
+```csharp
+public class MyBaseClass
+{
+    string name = "Dhaka"
+    // Default constructor
+    public MyBaseClass()
+    {
+        // Initialization code for the base class
+    }
+}
+
+public class MyDerivedClass : MyBaseClass
+{
+    // No constructor specified, so the default constructor of base class is implicitly used
+}
+
+// Creating an object of the derived class(this "derivedObject" has the default state "name" inherited from its base class)
+MyDerivedClass derivedObject = new MyDerivedClass();
+
+```
+
 
 </details>
 
