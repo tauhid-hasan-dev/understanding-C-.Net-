@@ -13,9 +13,8 @@ namespace OOP
         // Third : This will be called third
         public ConstructorChainClass(string firstName, string middleName, string lastName):this(firstName, lastName)
         {
-            this.firstName = firstName;
+            // we do not need to bind other data here except middleName (because we already bind other data inside the second Constructor)
             this.middleName = middleName;
-            this.lastName = lastName;
             Console.WriteLine("Contains 3 argument");
         }
 
