@@ -144,7 +144,7 @@ public int Width { get; set; }
 </details>
 
 <details>
-  <summary>Data Hiding (Encapsulation) </summary>
+  <summary>Constructor</summary>
 
 ## Constructors
 - In C#, a constructor is a special method that is automatically called when an object of a class is created
@@ -221,9 +221,119 @@ MyDerivedClass derivedObject = new MyDerivedClass();
 
 ```
 
+### Constructor Chaining
+- Constructor chaining is a concept in object-oriented programming where multiple constructors in a class are linked together, allowing one constructor to call another within the same class.
+- This allows for code reuse and helps in maintaining a clean and modular code structure.
 
+```csharp
+class ConstructorChainClass
+{
+    // Member variables
+    private string firstName { get; set; }
+    private string middleName { get; set; }
+    private string lastName { get; set; }
+
+
+    // Third : This will be called third
+    public ConstructorChainClass(string firstName, string middleName, string lastName):this(firstName, lastName)
+    {
+        // we do not need to bind other data here except middleName (because we already bind other data inside the second Constructor)
+        this.middleName = middleName;
+        Console.WriteLine("Contains 3 argument");
+    }
+
+    // Second : This will be called second
+    public ConstructorChainClass(string firstName, string lastName):this()
+    {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        Console.WriteLine("Contains 2 argument");
+    }
+
+    // First : Default constructor will be called first
+    public ConstructorChainClass()
+    {
+        Console.WriteLine("Constructor called, Object created, this a default constructor");
+    }
+
+}
+
+```
 </details>
 
+
+<details>
+  <summary> Association Relationship </summary>
+  
+##  Association Relationship 
+- In C#, an association relationship refers to a connection or relationship between two classes that highlights how they are related or connected in some way within a system. 
+- This relationship can be a simple connection or a more complex interaction between the classes.
+- Normally when use a class as a type of another member variable of another class we can call them Association relationship.
+
+There are different types of association relationships:
+
+#### One-to-One: Where one instance of a class is associated with exactly one instance of another class.
+
+#### One-to-Many: Where one instance of a class is associated with multiple instances of another class.
+
+#### Many-to-One: Where multiple instances of a class are associated with a single instance of another class.
+
+#### Many-to-Many: Where multiple instances of one class are associated with multiple instances of another class.
+
+These relationships are established through member variables, properties, or methods within the classes that reference each other.
+
+### ONE-TO-ONE
+
+Delclation of the type Class "Address"
+```csharp
+class Address
+{
+    public string HouseNo { set; get; }
+    public string RoadNo { set; get; }
+    public string Area { set; get; }
+    public string PostCode { set; get; }
+    public string District { set; get; }
+
+}
+```
+Assigning this Address class as a TYPE of a property in another class called "Person" 
+
+```csharp
+class Person
+{
+    // Member variables
+    private string firstName;
+    private string lastName;
+
+    // Assigning Address class as a type of PresentAddress property.
+    public Address PresentAddress { get; set; }
+}
+```
+Then using the Address type in Main function of Program.cs file.
+
+```csharp
+Address address = new Address();
+address.RoadNo = "102";
+address.Area = "Mohakhali";
+address.PostCode = "56677";
+
+Person person1 = new Person();
+
+person1.PresentAddress = address;
+
+//Retrieving the myAddress data from person1 instance (of Person class)
+//in here "Address" is type
+Address myAddress = person1.PresentAddress; 
+
+//If we want we can retrieve only one property from the address
+string area = person1.PresentAddress.Area;
+// OR
+string area1 = myAddress.Area;
+```
+
+
+
+</details>
 
 
 
