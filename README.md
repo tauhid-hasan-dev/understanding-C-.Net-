@@ -262,5 +262,28 @@ class ConstructorChainClass
 </details>
 
 
+<details>
+  <summary> Association Relationship </summary>
+  
+##  Association Relationship 
+- In C#, an association relationship refers to a connection or relationship between two classes that highlights how they are related or connected in some way within a system. 
+- This relationship can be a simple connection or a more complex interaction between the classes.
+- Normally when a class is a type of another member variable of another class we can them Association relationship.
+
+There are different types of association relationships:
+
+#### One-to-One: Where one instance of a class is associated with exactly one instance of another class.
+
+#### One-to-Many: Where one instance of a class is associated with multiple instances of another class.
+
+#### Many-to-One: Where multiple instances of a class are associated with a single instance of another class.
+
+#### Many-to-Many: Where multiple instances of one class are associated with multiple instances of another class.
+
+These relationships are established through member variables, properties, or methods within the classes that reference each other.
+
+
+</details>
+
 
 
