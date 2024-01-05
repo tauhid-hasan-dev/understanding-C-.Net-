@@ -144,7 +144,7 @@ public int Width { get; set; }
 </details>
 
 <details>
-  <summary>Data Hiding (Encapsulation) </summary>
+  <summary>Constructor</summary>
 
 ## Constructors
 - In C#, a constructor is a special method that is automatically called when an object of a class is created
