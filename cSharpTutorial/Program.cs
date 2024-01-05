@@ -129,7 +129,16 @@ namespace cSharpTutorial
 
             // ---------------------- Array List -------------------------
 
-            ArrayListClass.UnderstandingArrayList();
+            // ArrayListClass.UnderstandingArrayList();
+
+            //------------------------ OOP--------------------------------
+
+            //***** Constructor Chain ********
+
+            ConstructorChainClass person = new ConstructorChainClass("tauhid", "hasan", "tazin");
+
+
+
 
 
 

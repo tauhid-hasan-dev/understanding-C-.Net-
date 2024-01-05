@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Diagnostics.Contracts;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -20,6 +21,9 @@ namespace cSharpTutorial.UnderstandingMembers
 
         public int age;
 
+        //----------------- Data hiding or Encapsulation is possible by using Method or Properties -------------------
+
+        
 
         // member - properties - exposes jobtitle safety- properties start with a capital letter
         public string JobTitle 

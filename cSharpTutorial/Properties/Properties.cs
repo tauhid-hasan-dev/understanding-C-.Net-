@@ -16,10 +16,12 @@ namespace cSharpTutorial.Properties
 
 
 
-        // ---------------------------------------FIRST: way to define "SETTER" and "GETTER"------------------
-        // we need member variable to use Property
+        // ------------------------------ FIRST: way to define "SETTER" and "GETTER" -----------------------------
 
-        //public void SetLength(int length)
+        // using method
+
+        // public void SetLength(int length)
+
         //{
         //    this.length = length;
         //}
@@ -30,17 +32,17 @@ namespace cSharpTutorial.Properties
         //}
 
 
-        // -------------------------SECOND: way to define "SETTER" and "GETTER"--------------------
+        // ------------------------------- SECOND: way to define "SETTER" and "GETTER" ------------------------------
         // we need member variable to use Property
 
         //public int Height
         //{
-        //    get 
-        //    { 
-        //        return this.height; 
+        //    get
+        //    {
+        //        return this.height;
         //    }
         //    set
-        //    { 
+        //    {
         //        this.height = value;
         //    }
         //}
