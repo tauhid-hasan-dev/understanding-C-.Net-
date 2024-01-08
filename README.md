@@ -282,6 +282,9 @@ There are different types of association relationships:
 
 These relationships are established through member variables, properties, or methods within the classes that reference each other.
 
+<details>
+   <summary>ONE-TO-ONE</summary>
+
 ### ONE-TO-ONE
 
 Delclation of the type Class "Address"
@@ -330,6 +333,32 @@ string area = person1.PresentAddress.Area;
 // OR
 string area1 = myAddress.Area;
 ```
+
+</details>
+
+### ONE-TO-MANY
+
+Delclation of the type Class "Course"
+```csharp
+internal class Course
+{
+    public string Code { get; set; }
+    public string Title  { get; set; }
+    public double Credit { get; set; }
+}
+```
+and the department class which has a list of Course (where one to many relationship happens)
+
+```csharp
+internal class Department
+{
+    public string Code { get; set; }
+    public string Name { get; set; }
+
+    // One to many assosiation relationship has been stablished (A department can have multiple courses)
+    public List<Course> Course { get; set; }
+}
+
 
 
 
