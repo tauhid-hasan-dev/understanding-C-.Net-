@@ -336,6 +336,10 @@ string area1 = myAddress.Area;
 
 </details>
 
+
+<details>
+   <summary>ONE-TO-MANY</summary>
+  
 ### ONE-TO-MANY
 
 Delclation of the type Class "Course"
@@ -419,8 +423,7 @@ var result =  department.GetInfo();
 Console.WriteLine(result);
 
 ```
-
-
+</details>
 
 
 </details>
