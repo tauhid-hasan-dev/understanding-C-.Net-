@@ -343,21 +343,49 @@ Delclation of the type Class "Course"
 internal class Course
 {
     public string Code { get; set; }
-    public string Title  { get; set; }
+    public string Title { get; set; }
     public double Credit { get; set; }
+    public string getInfo()
+    {
+        return (Code + " - " + Title + " - " + Credit);
+    }
 }
 ```
+
 and the department class which has a list of Course (where one to many relationship happens)
 
 ```csharp
 internal class Department
 {
+    // ---> This is a property of the Department class, representing a list of Course objects.
+    // ---> This indicates a one-to-many association between a department and its courses.
+    // ---> A department can have multiple courses.
+
+    public List<Course> Courses { get; set; } 
+
+    // ---> This is a constructor for the Department class. It initializes the Courses property as a new instance of List<Course>.
+    // ---> This ensures that when a Department object is created, it starts with an empty list of courses.
+
+    public Department() 
+    { 
+        Courses = new List<Course>();
+    }
+
     public string Code { get; set; }
     public string Name { get; set; }
 
-    // One to many assosiation relationship has been stablished (A department can have multiple courses)
-    public List<Course> Course { get; set; }
+    // ---> Get all the courses and their department.
+    public string GetInfo()
+    {
+        string info = "Code: " + Code + " Name: " + Name + Environment.NewLine;
+        foreach (Course course in Courses)
+        {
+            info += course.getInfo() + "\n";          
+            return info;
+        }
+    }
 }
+```
 
 
 
