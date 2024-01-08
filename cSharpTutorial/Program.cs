@@ -26,6 +26,8 @@ using Microsoft.VisualBasic;
 using cSharpTutorial.ArrayListNameSpace;
 using Microsoft.Win32.SafeHandles;
 using cSharpTutorial.OOP;
+using cSharpTutorial.OOP.One_To_Many.cs;
+using System.Xml.Serialization;
 
 
 namespace cSharpTutorial
@@ -140,41 +142,59 @@ namespace cSharpTutorial
             // ConstructorChainClass person = new ConstructorChainClass("tauhid", "hasan", "tazin");
 
 
-            // Assoisiation Relasionship
+            //--------------------- Assoisiation Relasionship -----------------------------
 
-            // -------------------- OneToOne Relationship ----------------
+            // -------------------- OneTo One Relationship ----------------
 
-            //
-            Address address = new Address();
-            address.RoadNo = "102";
-            address.Area = "Mohakhali";
-            address.PostCode = "56677";
 
-            Person person1 = new Person();
+            //Address address = new Address();
+            //address.RoadNo = "102";
+            //address.Area = "Mohakhali";
+            //address.PostCode = "56677";
 
-            person1.PresentAddress = address;
+            //Person person1 = new Person();
 
-            //Retrieving the myAddress data from person1 instance (of Person class)
+            //person1.PresentAddress = address;
+
+            //----> Retrieving the myAddress data from person1 instance (of Person class)
             //in here "Address" is type
-            Address myAddress = person1.PresentAddress; 
 
-            //If we want we can retrieve only one property from the address
-            string area = person1.PresentAddress.Area;
+            // Address myAddress = person1.PresentAddress; 
+
+            //----> If we want we can retrieve only one property from the address
+
+            // string area = person1.PresentAddress.Area;
             // OR
-            string area1 = myAddress.Area;
+            //string area1 = myAddress.Area;
 
 
+            //-------------------------- One to many relationship ----------------------
 
+            Course course1 = new Course();
+            course1.Code = "CSE-101";
+            course1.Title = "Web Development";
+            course1.Credit = 3.0;
 
+            Course course2 = new Course();
+            course2.Code = "CSE-102";
+            course2.Title = "Data Structure";
+            course2.Credit = 3.0;
 
+            Course course3 = new Course();
+            course3.Code = "CSE-103";
+            course3.Title = "Database Design";
+            course3.Credit = 3.0;
 
+            Department department = new Department();
+            department.Code = "CSE";
+            department.Name = "Computer Science & Engineering";
 
+            department.Courses.Add(course1);
+            department.Courses.Add(course2);
+            department.Courses.Add(course3);
 
-
-
-
-
-
+            var result =  department.GetInfo();
+            Console.WriteLine(result);
         }
     }
 
