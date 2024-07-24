@@ -33,8 +33,8 @@ namespace cSharpTutorial.OOP.One_To_Many.cs
             foreach (Course course in Courses)
             {
                 info += course.getInfo() + "\n";            }
-            return info;
-        }
+                return info;
+            }
 
     }
 }

@@ -28,6 +28,8 @@ using Microsoft.Win32.SafeHandles;
 using cSharpTutorial.OOP;
 using cSharpTutorial.OOP.One_To_Many.cs;
 using System.Xml.Serialization;
+using cSharpTutorial.NumericDataTypes; // this is namespace of corresponding file.
+
 
 
 namespace cSharpTutorial
@@ -36,6 +38,9 @@ namespace cSharpTutorial
     {
         static void Main(string[] args)
         {
+            NumericDataTypesClass.UnderstandingNumericDataTypes();
+            
+            
             // UserInput1.UnderstandingUserInputs();
             // func1.UnderstandingFunctions();1
             // ErrorHandlingClass.CatchErrors();
@@ -170,7 +175,7 @@ namespace cSharpTutorial
 
             //-------------------------- One to many relationship ----------------------
 
-            Course course1 = new Course();
+            /*Course course1 = new Course();
             course1.Code = "CSE-101";
             course1.Title = "Web Development";
             course1.Credit = 3.0;
@@ -193,8 +198,10 @@ namespace cSharpTutorial
             department.Courses.Add(course2);
             department.Courses.Add(course3);
 
-            var result =  department.GetInfo();
-            Console.WriteLine(result);
+            var result =  department.GetInfo();*/
+            /*Console.WriteLine(result);*/
+
+            Console.ReadLine();
         }
     }
 
