@@ -336,6 +336,10 @@ string area1 = myAddress.Area;
 
 </details>
 
+
+<details>
+   <summary>ONE-TO-MANY</summary>
+  
 ### ONE-TO-MANY
 
 Delclation of the type Class "Course"
@@ -343,23 +347,83 @@ Delclation of the type Class "Course"
 internal class Course
 {
     public string Code { get; set; }
-    public string Title  { get; set; }
+    public string Title { get; set; }
     public double Credit { get; set; }
+    public string getInfo()
+    {
+        return (Code + " - " + Title + " - " + Credit);
+    }
 }
 ```
+
 and the department class which has a list of Course (where one to many relationship happens)
 
 ```csharp
 internal class Department
 {
+    // ---> This is a property of the Department class, representing a list of Course objects.
+    // ---> This indicates a one-to-many association between a department and its courses.
+    // ---> A department can have multiple courses.
+
+    public List<Course> Courses { get; set; } 
+
+    // ---> This is a constructor for the Department class. It initializes the Courses property as a new instance of List<Course>.
+    // ---> This ensures that when a Department object is created, it starts with an empty list of courses.
+
+    public Department() 
+    { 
+        Courses = new List<Course>();
+    }
+
     public string Code { get; set; }
     public string Name { get; set; }
 
-    // One to many assosiation relationship has been stablished (A department can have multiple courses)
-    public List<Course> Course { get; set; }
+    // ---> Get all the courses and their department.
+    public string GetInfo()
+    {
+        string info = "Code: " + Code + " Name: " + Name + Environment.NewLine;
+        foreach (Course course in Courses)
+        {
+            info += course.getInfo() + "\n";          
+            return info;
+        }
+    }
 }
+```
+And the finally USER/CALLER will call in the program.cs file like this 
 
+```csharp
+//-----------------------> One to many relationship <----------------------
 
+Course course1 = new Course();
+course1.Code = "CSE-101";
+course1.Title = "Web Development";
+course1.Credit = 3.0;
+
+Course course2 = new Course();
+course2.Code = "CSE-102";
+course2.Title = "Data Structure";
+course2.Credit = 3.0;
+
+Course course3 = new Course();
+course3.Code = "CSE-103";
+course3.Title = "Database Design";
+course3.Credit = 3.0;
+
+Department department = new Department();
+
+department.Code = "CSE";
+department.Name = "Computer Science & Engineering";
+
+department.Courses.Add(course1);
+department.Courses.Add(course2);
+department.Courses.Add(course3);
+
+var result =  department.GetInfo();
+Console.WriteLine(result);
+
+```
+</details>
 
 
 </details>
