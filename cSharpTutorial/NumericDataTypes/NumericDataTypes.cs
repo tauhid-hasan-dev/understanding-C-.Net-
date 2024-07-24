@@ -20,10 +20,6 @@ namespace cSharpTutorial.NumericDataTypes
             long bigNumber = 9000000L;
             Console.WriteLine(bigNumber);
 
-       
-
-
-
 
         }
        
